@@ -13,5 +13,6 @@ setup(
     package_dir=['./dist'],
     install_requires={
         'pillow>=10.2.0',
+        'fastapi>=0.104.1'
     },
 )

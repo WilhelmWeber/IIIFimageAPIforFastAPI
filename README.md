@@ -37,7 +37,7 @@ async def returnImage(imageIdentifier: str, req_path: str):
 @app.get('/api/v1/image/{imageIdentifier}/info.json')
 async def returnInfo(imageIdentifier: str):
     imagePath = IDtoPath(imageIdentifier) #arbitary function to find imagepath by imageIdentifier
-    return processor.returnInfo(imagePath)
+    return processor.returnInfo(imagePath, imageIdentifier)
 ```
 Warning:
 Always define Information Requests **before** Image Requests
