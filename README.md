@@ -15,11 +15,11 @@ processor = imageapi.imageAPI(
     }
 )
 ```
-version(int): The version of imageAPI (2 or 3)
-pathPrefix(str): The prefix of your API's URI
-opt(Option?): 
-    maxwidth(int): Maximum image width your API can provide
-    maxheight(int): Maximum image height your API can provide
+version(int): The version of imageAPI (2 or 3)  
+pathPrefix(str): The prefix of your API's URI  
+opt(Option?):  
+  maxwidth(int): Maximum image width your API can provide  
+  maxheight(int): Maximum image height your API can provide
     
 ・Image Requests
 ```python
