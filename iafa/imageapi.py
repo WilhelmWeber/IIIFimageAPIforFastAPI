@@ -26,7 +26,6 @@ class imageAPI:
         if (not img): raise HTTPException(status_code=400, detail='Not Found')
 
         reg = self.__regionSelector(paths["region"], img.size)
-        print(reg)
         siz = self.__sizeSelector(reg[2], reg[3], paths["size"])
         rot = self.__angleSelector(paths["rotation"])
         qua = self.__qualitySelector(paths["quality"])
