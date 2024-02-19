@@ -6,14 +6,7 @@ pip install FastIIIFimageAPI
 ・Instantiation
 ```python
 from iafa import imageapi
-processor = imageapi.imageAPI(
-    version=2,
-    pathPrefix='https://example.com/api/v1/image',
-    opt = {
-        "maxwidth"=10000
-        "maxheight"=10000
-    }
-)
+processor = imageapi.imageAPI(version=2, pathPrefix='https://example.com/api/v1/image')
 ```
 version(int): The version of imageAPI (2 or 3)  
 pathPrefix(str): The prefix of your API's URI  
